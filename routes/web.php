@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('livewire/home-page');
 })->name('main');
 
+Route::get('/homer', function () {
+    return view('livewire/homer');
+})->name('mains');
+
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
