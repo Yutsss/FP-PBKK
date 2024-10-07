@@ -27,7 +27,7 @@
     background-color: #f3fbfa;
 }
 
-.home-page .group {
+.home-page .navbar {
     position: absolute;
     width: 191px;
     height: 256px;
@@ -60,7 +60,7 @@
 .home-page .search {
     display: flex;
     width: 348px;
-    height: 47px;
+    height: 27px;
     align-items: center;
     gap: var(--size-space-200);
     padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
@@ -93,7 +93,7 @@
     height: 16px;
 }
 
-.home-page .button-group {
+.home-page .button-grup {
     display: flex;
     width: 240px;
     align-items: center;
@@ -194,7 +194,7 @@
 .home-page .rectangle-2 {
     position: absolute;
     width: 1920px;
-    height: 540px;
+    height: 460px;
     top: 100px;
     left: 0;
     background-color: #95d0d8;
@@ -202,18 +202,18 @@
 
 .home-page .image-2 {
     position: absolute;
-    width: 319px;
-    height: 446px;
+    width: 280px;
+    height: 380px;
     top: 135px;
     left: 495px;
     background-color: #55a6b1;
 }
 
-.home-page .group-2 {
+.home-page .scroll {
     position: absolute;
     width: 110px;
     height: 15px;
-    top: 598px;
+    top: 530px;
     left: 905px;
 }
 
@@ -363,7 +363,7 @@
     left: 11px;
 }
 
-.home-page .group-6 {
+.home-page .arrow-kanan {
     position: absolute;
     width: 88px;
     height: 88px;
@@ -519,7 +519,7 @@
 .home-page .img {
     position: absolute;
     width: 588px;
-    height: 446px;
+    height: 380px;
     top: 135px;
     left: 858px;
 }
@@ -611,11 +611,11 @@
     border: 0px none;
 }
 
-.home-page .overlap-group-2 {
+/* .home-page .overlap-group-2 {
     position: relative;
     width: 27px;
     height: 27px;
-}
+} */
 
 .home-page .vector {
     position: absolute;
@@ -1332,8 +1332,8 @@
 
 .home-page .image-4 {
     position: absolute;
-    width: 319px;
-    height: 446px;
+    width: 280px;
+    height: 380px;
     top: 127px;
     left: 485px;
     object-fit: cover;
