@@ -13,9 +13,12 @@
                 <img class="x" src="{{ asset('img/x.svg') }}" />
             </div>
             <div class="button-group">
-                <button class="button"><button class="div">Login</button></button>
-                <button class="button-wrapper"><button class="button-2">Register</button></button>
+                <!-- Emit the event and also log a console message -->
+                <button class="button" wire:click="$emit('openLoginModal')" onclick="console.log('Login Button clicked')">Login</button>
+
+                <button class="button-wrapper" wire:click="$emit('openRegisterModal')" onclick="console.log('Register button clicked')">Register</button>
             </div>
+
             <div class="rectangle-2"></div>
             <div class="image-2"></div>
             <div class="group-2">
@@ -119,4 +122,7 @@
         </div>
     </div>
 </div>
+
+<livewire:login-modal />
+<livewire:register-modal />
 @endsection

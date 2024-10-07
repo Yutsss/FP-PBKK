@@ -8,15 +8,14 @@
     <!-- Link your CSS files -->
     <link rel="stylesheet" href="{{ asset('css/styleguide.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
-    @livewireStyles  <!-- If you're using Livewire -->
-    <title>Your Application</title>
+    @livewireStyles
+    <title>Online Library</title>
 </head>
 <body>
     <div class="container">
         @yield('content')
     </div>
     
-    @livewireScripts  <!-- If you're using Livewire -->
+    @livewireScripts
 </body>
 </html>

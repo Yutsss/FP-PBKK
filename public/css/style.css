@@ -120,6 +120,17 @@
     box-shadow: 0px 4px 4px #00000040;
 }
 
+.home-page .button:hover {
+    transform: translateY(2px); /* Moves the button down slightly */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Less shadow for a "pressed" look */
+}
+
+/* Push down effect on click (active state) */
+.home-page .button:active {
+    transform: translateY(4px); /* Moves the button down further on click */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Even less shadow */
+}
+
 .home-page .div {
     all: unset;
     box-sizing: border-box;
@@ -152,8 +163,18 @@
     overflow: hidden;
     border: 1px solid;
     border-color: var(--color-border-brand-default);
+    box-shadow: 0px 4px 4px #00000040;
 }
 
+.home-page .button-wrapper:hover {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-page .button-wrapper:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
 .home-page .button-2 {
     all: unset;
     box-sizing: border-box;
@@ -1348,4 +1369,39 @@
     height: 54px;
     top: 1628px;
     left: 249px;
+}
+
+/* Modal overlay covers the entire screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it's on top of other content */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Adjust width as needed */
+    text-align: center;
+    position: relative;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
 }
