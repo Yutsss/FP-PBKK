@@ -88,7 +88,7 @@
                 </div>
             </div>
             @endfor
-            
+
             <!-- Book details -->
             <div class="text-wrapper-12">Kentang gedagedi</div>
             <div class="text-wrapper-13">Gadis Rusa Nokotan</div>
@@ -122,6 +122,5 @@
     </div>
 </div>
 
-<livewire:login-modal />
-<livewire:register-modal />
+
 @endsection
