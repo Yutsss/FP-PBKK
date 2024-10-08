@@ -76,8 +76,8 @@ $conn->close();
                         {{-- <div class="title"><?php echo $title; ?></div>
                         <div class="genre"><?php echo $genre; ?></div>
                         <div class="rating">
-                            Rating: <?php echo $rating; ?>/5 
-                            <?php 
+                            Rating: <?php echo $rating; ?>/5
+                            <?php
                             // Loop to print stars
                             for ($i = 1; $i <= 5; $i++) {
                                 if ($i <= floor($rating)) {
@@ -135,8 +135,8 @@ $conn->close();
                             <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
                             <div class="book-title"><?php echo $title; ?></div>
                             <div class="book-rating">
-                            Rating: <?php echo $rating; ?>/5 
-                            <?php 
+                            Rating: <?php echo $rating; ?>/5
+                            <?php
                             // Display stars based on the rating
                             for ($i = 1; $i <= 5; $i++) {
                                 if ($i <= floor($rating)) {
