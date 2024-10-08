@@ -14,13 +14,11 @@
     <h1>Verification Email Already Sent</h1>
     <p>Please check your email to verify your account.</p>
     <div class="actions">
-        <button class="btn">Resend Email</button>
-        <a href="/livewire/homer" class="link">Return to Homepage</a>
+        <form action="{{ route('verification.send') }}" method="POST">
+            @csrf <!-- Menambahkan token CSRF untuk keamanan -->
+            <button type="submit" class="btn">Resend Email</button>
+        </form>
     </div>
 </div>
-<footer>
-    <a href="#">Help</a>
-    <a href="#">Privacy Policy</a>
-</footer>
 </body>
 </html>

@@ -4,13 +4,13 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class HomePage extends Component
+class Main extends Component
 {
     public $searchValue = '';
 
     public function render()
     {
-        return view('livewire.home-page');
+        return view('livewire.main-page')->extends('components.layouts.app')->section('content');
     }
 
     public function submitSearch()

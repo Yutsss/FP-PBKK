@@ -1,5 +1,4 @@
-@extends('components.layouts.app')
-@section('content')
+
 
     {{-- Eksperimen pas manggil buku --}}
     {{-- <?php
@@ -180,4 +179,3 @@
         </div>
     </div>
 
-@endsection
