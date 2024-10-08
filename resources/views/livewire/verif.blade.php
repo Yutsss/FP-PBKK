@@ -15,7 +15,7 @@
         <p>Please check your email to verify your account.</p>
         <div class="actions">
             <button class="btn">Resend Email</button>
-            <a href="/livewire/homer" class="link">Return to Homepage</a>
+            <a href="/" class="link">Return to Homepage</a>
         </div>
     </div>
     <footer>
