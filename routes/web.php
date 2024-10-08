@@ -28,3 +28,6 @@ Route::post('/register', [UserController::class, 'register'])->name('register');
 Route::get('/login', function () {
     return view('livewire/login');
 })->name('main');
+Route::get('/verif', function () {
+    return view('livewire/verif');
+})->name('main');
