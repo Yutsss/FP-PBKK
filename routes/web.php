@@ -2,17 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Livewire\Auth\Register;
 
 Route::get('/', function () {
-    return view('livewire/home-page');
+    return view('livewire.homer');
 })->name('main');
 
-Route::get('/homer', function () {
-    return view('livewire/homer');
-})->name('mains');
+//Route::get('/home', function () {
+//    return view('livewire.homer');
+//})->name('home');
 
 Route::get('/email/verify', function () {
-    return view('auth.verify-email');
+    return view('livewire.auth.verify-email');
 })->middleware('auth')->name('verification.notice');
 
 Route::get('/email/verify/{id}/{hash}', function (\Illuminate\Foundation\Auth\EmailVerificationRequest $request) {
@@ -20,14 +21,8 @@ Route::get('/email/verify/{id}/{hash}', function (\Illuminate\Foundation\Auth\Em
     return redirect()->route('main');
 })->middleware(['auth', 'signed'])->name('verification.verify');
 
-Route::get('/register', function () {
-    return view('test-register');
-})->name('main');
-Route::post('/register', [UserController::class, 'register'])->name('register');
+Route::get('/register', Register::class)->name('register');
 
 Route::get('/login', function () {
-    return view('livewire/login');
-})->name('main');
-Route::get('/verif', function () {
-    return view('livewire/verif');
-})->name('main');
+    return view('livewire.auth.login');
+})->name('login');
