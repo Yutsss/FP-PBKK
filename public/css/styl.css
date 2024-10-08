@@ -15,16 +15,16 @@
 
 .homer-page .page {
     overflow-x: hidden;
-    width: 1920px;
-    height: 1728px;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar .book-open {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 24px;
-    left: 26px;
+    width: 3vw;
+    height: 3vw;
+    top: 1%;
+    left: 1%;
 }
 
 .navbar a {
@@ -40,42 +40,43 @@
     line-height: 23px;
     white-space: nowrap;
     text-decoration: none; /* Removes underline from links */
-  }
-  
-  /* Adjust positions for each navigation link */
-  .navbar a:nth-child(1) {
-    left: 123px; /* Home link */
-  }
-  
-  .navbar a:nth-child(2) {
-    left: 223px; /* About link */
-  }
-  
-  .navbar a:nth-child(3) {
-    left: 323px; /* Services link */
-  }
-  
-  .navbar a:nth-child(4) {
-    left: 423px; /* Contact link */
-  }
-  
-  .navbar a:nth-child(5) {
-    left: 566px; /* Contact link */
-  }
+}
 
-  /* Hover effect for navigation links */
-  .navbar a:hover {
+/* Adjust positions for each navigation link */
+.navbar a:nth-child(1) {
+    left: 123px; /* Home link */
+}
+
+.navbar a:nth-child(2) {
+    left: 223px; /* About link */
+}
+
+.navbar a:nth-child(3) {
+    left: 323px; /* Services link */
+}
+
+.navbar a:nth-child(4) {
+    left: 423px; /* Contact link */
+}
+
+.navbar a:nth-child(5) {
+    left: 566px; /* Contact link */
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
 
-  .navbar .search {
+.navbar .search {
     display: flex;
     width: 348px;
     height: 27px;
     align-items: center;
     gap: var(--size-space-200);
-    padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
+    padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
+        var(--size-space-400);
     position: absolute;
     top: 26px;
     left: 1247px;
@@ -274,10 +275,10 @@
     top: -10px;
     left: -10px;
     background-color: #95d0d8; /* Moved from .overlap-14 */
-    border-radius: 20px;       /* Moved from .overlap-14 */
-    display: flex;             /* To center the text inside the container */
-    align-items: center;       /* Vertically center the text */
-    justify-content: center;   /* Horizontally center the text */
+    border-radius: 20px; /* Moved from .overlap-14 */
+    display: flex; /* To center the text inside the container */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
 }
 
 /* .recrtangle-6 {
@@ -568,4 +569,151 @@
     letter-spacing: 0;
     line-height: 24px;
     white-space: nowrap;
+}
+/* Center the modal on the screen */
+.login-pop-up {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999; /* Ensure it is above other content */
+    overflow: hidden;
+    padding: 20px; /* Add padding to avoid edges touching */
+}
+
+/* The modal box (adjust dimensions for responsiveness) */
+.login-pop-up .div {
+    background-image: url(./img/rectangle-6.svg);
+    background-size: cover;
+    width: 80%; /* Make it responsive with percentage */
+    max-width: 535px; /* Cap at a maximum size */
+    height: auto;
+    max-height: 570px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container, centered inside the modal */
+.login-pop-up .form-log-in {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%; /* Make width relative */
+    max-width: 433px;
+    padding: 20px;
+    align-items: center; /* Center form items horizontally */
+    gap: 20px;
+    background-color: #95d0d8;
+    border-radius: 10px;
+    border: 1px solid var(--color-border-default-default);
+}
+
+/* Input fields, full width within the form */
+.login-pop-up .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%; /* Stretch input fields */
+}
+
+/* Labels */
+.login-pop-up .label {
+    font-family: var(--body-base-font-family);
+    font-weight: var(--body-base-font-weight);
+    color: var(--color-text-default-default);
+    font-size: var(--body-base-font-size);
+    line-height: var(--body-base-line-height);
+}
+
+/* Input boxes */
+.login-pop-up .input {
+    width: 100%; /* Full width */
+    padding: 10px 15px; /* Adjust padding */
+    background-color: var(--color-background-default-default);
+    border-radius: 10px;
+    border: 1px solid var(--color-border-default-default);
+    box-sizing: border-box;
+}
+
+/* Buttons */
+.login-pop-up .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-pop-up .button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-background-brand-default);
+    border-radius: 10px;
+    border: 1px solid var(--color-border-brand-default);
+    color: var(--color-text-brand-on-brand);
+    cursor: pointer;
+}
+
+.login-pop-up .login-title {
+    font-size: 36px; /* Adjust this for the desired size */
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add spacing below the title */
+    color: #1e1e1e; /* Set the text color */
+    line-height: 1.2;
+}
+
+
+/* For smaller devices, adjust the modal size and fonts */
+@media (max-width: 768px) {
+    .login-pop-up .div {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .login-pop-up .form-log-in {
+        padding: 15px;
+        min-width: 90%;
+    }
+
+    .login-pop-up .button {
+        padding: 10px;
+    }
+
+    .login-pop-up .text-wrapper-2 {
+        font-size: 36px; /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-pop-up .div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .login-pop-up .form-log-in {
+        padding: 10px;
+    }
+
+    .login-pop-up .input {
+        padding: 8px;
+    }
+
+    .login-pop-up .button {
+        padding: 8px;
+    }
+
+    .login-pop-up .text-wrapper-2 {
+        font-size: 28px; /* Further reduce for mobile devices */
+    }
 }

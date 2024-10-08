@@ -40,10 +40,10 @@ $conn->close();
     <div class="page">
         <div class="navbar">
             <img class="book-open" src="{{ asset('img/book-open.svg') }}" />
-            {{-- <div class="text-wrapper-7">Home</div>
+            <!-- <div class="text-wrapper-7">Home</div>
             <div class="text-wrapper-8">Genres</div>
             <div class="text-wrapper-9">Borrow</div>
-            <div class="text-wrapper-10">Wishlist</div> --}}
+            <div class="text-wrapper-10">Wishlist</div> -->
 
             <a href="#home">Home</a>
             <a href="#genre">Genre</a>
@@ -55,10 +55,8 @@ $conn->close();
                 <img class="x" src="{{ asset('img/x.svg') }}" />
             </div>
             <div class="button-grup">
-                <!-- Emit the event and also log a console message -->
-                <button class="button" wire:click="$emit('openLoginModal')" onclick="console.log('Login Button clicked')">Login</button>
-
-                <button class="button-wrapper" wire:click="$emit('openRegisterModal')" onclick="console.log('Register button clicked')">Register</button>
+                <button class="button" onclick="window.location.href='/login'">Login</button>
+                <button class="button-wrapper" onclick="window.location.href='/register'">Register</button>
             </div>
         </div>
         <div class="Highlight">
@@ -67,7 +65,7 @@ $conn->close();
                 <img class="image-4" src="{{ asset('img/image-1.png') }}" />
                 <div class="rectangle-6">
                     <div class="content">
-                        <div class="title">Miss Peregrine’s Home for Peculiar Children</div>
+                        <div class="title">Miss Peregrine's Home for Peculiar Children</div>
                         <div class="genre">Fantasy, Fiction, Horror</div>
                         <div class="rating">Rating: 4.5/5</div>
                         <div class="synopsis">
@@ -180,6 +178,5 @@ $conn->close();
         </div>
     </div>
 
-<livewire:login-modal />
-<livewire:register-modal />
+
 @endsection

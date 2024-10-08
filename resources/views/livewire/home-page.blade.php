@@ -4,16 +4,15 @@
     <div class="overlap-wrapper">
         <div class="overlap">
             <div class="rectangle"></div>
-            {{-- <div class="navbar">
+            <div class="group">
                 <img class="image" src="{{ asset('img/image-4-6.png') }}" />
-            </div> --}}
+            </div>
             <img class="book-open" src="{{ asset('img/book-open.svg') }}" />
             <div class="search">
                 <div class="text-wrapper">Value</div>
                 <img class="x" src="{{ asset('img/x.svg') }}" />
             </div>
-            <div class="button-grup">
-                <!-- Emit the event and also log a console message -->
+            <div class="button-group">
                 <button class="button" wire:click="$emit('openLoginModal')" onclick="console.log('Login Button clicked')">Login</button>
 
                 <button class="button-wrapper" wire:click="$emit('openRegisterModal')" onclick="console.log('Register button clicked')">Register</button>
@@ -21,7 +20,7 @@
 
             <div class="rectangle-2"></div>
             <div class="image-2"></div>
-            <div class="scroll">
+            <div class="group-2">
                 <div class="ellipse"></div>
                 <div class="ellipse-2"></div>
                 <div class="ellipse-3"></div>
@@ -36,18 +35,19 @@
             <div class="img-wrapper">
                 <img class="image" src="{{ asset('img/image-4-4.png') }}" />
             </div>
-            {{-- <div class="group-4">
+            <div class="group-4">
                 <img class="image" src="{{ asset('img/image-4-7.png') }}" />
             </div>
             <div class="group-5">
                 <img class="image" src="{{ asset('img/image-4-9.png') }}" />
-            </div> --}}
+            </div>
             <div class="arrow-right-wrapper">
                 <img class="arrow-right" src="{{ asset('img/arrow-right-2.svg') }}" />
             </div>
-            <div class="arrow-kanan">
+            <div class="group-6">
                 <img class="arrow-right" src="{{ asset('img/arrow-right.svg') }}" />
             </div>
+            <div class="rectangle-3"></div>
             <div class="rectangle-3"></div>
             <div class="overlap-group-wrapper">
                 <div class="overlap-group">

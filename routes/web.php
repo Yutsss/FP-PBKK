@@ -24,3 +24,7 @@ Route::get('/register', function () {
     return view('test-register');
 })->name('main');
 Route::post('/register', [UserController::class, 'register'])->name('register');
+
+Route::get('/login', function () {
+    return view('livewire/login');
+})->name('main');
