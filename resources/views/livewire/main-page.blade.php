@@ -39,10 +39,6 @@
         <div class="page">
             <div class="navbar">
                 <img class="book-open" src="{{ asset('img/book-open.svg') }}"/>
-                <!-- <div class="text-wrapper-7">Home</div>
-                <div class="text-wrapper-8">Genres</div>
-                <div class="text-wrapper-9">Borrow</div>
-                <div class="text-wrapper-10">Wishlist</div> -->
 
                 <a href="#home">Home</a>
                 <a href="#genre">Genre</a>
@@ -53,10 +49,16 @@
                     <div class="text-wrapper">Value</div>
                     <img class="x" src="{{ asset('img/x.svg') }}"/>
                 </div>
+                @if(auth()->check())
+                <div class="button-grup">
+                    <button class="button" onclick="window.location.href='/logout'">Logout</button>
+                    <button class="button-wrapper" onclick="window.location.href='/profile'">Profile</button>
+                @else
                 <div class="button-grup">
                     <button class="button" onclick="window.location.href='/login'">Login</button>
                     <button class="button-wrapper" onclick="window.location.href='/register'">Register</button>
                 </div>
+                @endif
             </div>
             <div class="Highlight">
                 <div class="rectangle-2">
