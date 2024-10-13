@@ -13,6 +13,14 @@ Route::get('/', Main::class)->name('main');
 //})->name('home');
 Route::get('/register', Register::class)->name('register');
 
+Route::get('/genre', function () {
+   return view('livewire.genre-page');
+})->name('genres');
+
+Route::get('/borrow', function () {
+    return view('livewire.borrow-page');
+ })->name('borrow');
+
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
