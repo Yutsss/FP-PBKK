@@ -6,7 +6,11 @@ use App\Livewire\Main;
 use App\Livewire\Auth\Register;
 use Illuminate\Http\Request;
 
-Route::get('/', Main::class)->name('main');
+// Route::get('/', Main::class)->name('main');
+
+Route::get('/', function () {
+    return view('livewire.main-page');
+})->name('main');
 
 //Route::get('/home', function () {
 //    return view('livewire.homer');

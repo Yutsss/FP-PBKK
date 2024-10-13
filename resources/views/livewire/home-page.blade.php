@@ -1,5 +1,4 @@
-@extends('components.layouts.app')
-@section('content')
+
     <div class="home-page">
         <div class="overlap-wrapper">
             <div class="overlap">
@@ -128,4 +127,3 @@
         </div>
     </div>
 
-@endsection

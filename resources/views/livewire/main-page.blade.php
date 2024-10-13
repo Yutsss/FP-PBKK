@@ -1,53 +1,19 @@
 
-
-    {{-- Eksperimen pas manggil buku --}}
-    {{-- <?php
-    // Connect to the database
-    $servername = "localhost";
-    $username = "root"; // Replace with your DB username
-    $password = ""; // Replace with your DB password
-    $dbname = "book_database"; // Replace with your DB name
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Check the connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Fetch the book data (assuming you have a table `books` with relevant columns)
-    $sql = "SELECT title, genre, rating, synopsis, author FROM books WHERE id = 1"; // Change ID as per the record you want to fetch
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-      // Output the data of the selected row
-      while($row = $result->fetch_assoc()) {
-        $title = $row["title"];
-        $genre = $row["genre"];
-        $rating = $row["rating"];
-        $synopsis = $row["synopsis"];
-        $author = $row["author"];
-      }
-    } else {
-      echo "0 results";
-    }
-
-    $conn->close();
-    ?> --}}
-
+@extends('components.layouts.app')
+@section('content')
     <div class="homer-page">
         <div class="page">
             <div class="navbar">
-                <img class="book-open" src="{{ asset('img/book-open.svg') }}"/>
+                <img class="book-open" src="{{ asset('images/Book open.svg') }}"/>
 
-                <a href="#home">Home</a>
-                <a href="#genre">Genre</a>
-                <a href="#borrow">Borrow</a>
+                <a href="/">Home</a>
+                <a href="/genre">Genre</a>
+                <a href="/borrow">Borrow</a>
                 <a href="#wishlist">Wishlist</a>
 
                 <div class="search">
                     <div class="text-wrapper">Value</div>
-                    <img class="x" src="{{ asset('img/x.svg') }}"/>
+                    <img class="x" src="{{ asset('images/X.svg') }}"/>
                 </div>
                 @if(auth()->check())
                 <div class="button-grup">
@@ -63,7 +29,7 @@
             <div class="Highlight">
                 <div class="rectangle-2">
                     <div class="image-2"></div>
-                    <img class="image-4" src="{{ asset('img/image-1.png') }}"/>
+                    <img class="image-4" src="{{ asset('images/image 1.png') }}"/>
                     <div class="rectangle-6">
                         <div class="content">
                             <div class="title">Miss Peregrine's Home for Peculiar Children</div>
@@ -120,35 +86,35 @@
                 <div class="List-Popular">
                     <div class="border">
                         <div class="img-wrapper">
-                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                            <img class="contohimage" src="images/image 4.png" alt="Kentang Gedagedi"/>
                         </div>
                         <a class="judul">Kentang Gedagedi</a>
                         <a class="rate">4.5/5</a>
                     </div>
                     <div class="border">
                         <div class="img-wrapper">
-                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                            <img class="contohimage" src="images/image 5.png" alt="Kentang Gedagedi"/>
                         </div>
                         <a class="judul">Kentang Bakar</a>
                         <a class="rate">4.5/5</a>
                     </div>
                     <div class="border">
                         <div class="img-wrapper">
-                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                            <img class="contohimage" src="images/image 9.png" alt="Kentang Gedagedi"/>
                         </div>
                         <a class="judul">Kentang Rebus</a>
                         <a class="rate">4.5/5</a>
                     </div>
                     <div class="border">
                         <div class="img-wrapper">
-                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                            <img class="contohimage" src="images/image 9.png" alt="Kentang Gedagedi"/>
                         </div>
                         <a class="judul">Kentang Goreng</a>
                         <a class="rate">4.5/5</a>
                     </div>
                     <div class="border">
                         <div class="img-wrapper">
-                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                            <img class="contohimage" src="images/image 5.png" alt="Kentang Gedagedi"/>
                         </div>
                         <a class="judul">Kentang Manis</a>
                         <a class="rate">4.5/5</a>
@@ -176,7 +142,7 @@
                     </div>
                 </div>
                 <div class="arrow-right-wrapper">
-                    <img class="arrow-right" src="{{ asset('img/arrow-right-2.svg') }}"/>
+                    <img class="arrow-right" src="{{ asset('images/Arrow right.svg') }}"/>
                 </div>
             </div>
             {{-- <?php
@@ -223,10 +189,10 @@
         </div>
         <div class="overlap-group-wrapper">
             <div class="overlap-group">
-                <img class="instagram" src="{{ asset('img/instagram.svg') }}"/>
-                <img class="twitter" src="{{ asset('img/twitter.svg') }}"/>
-                <img class="github" src="{{ asset('img/github.svg') }}"/>
-                <img class="location" src="{{ asset('img/location.svg') }}"/>
+                <img class="instagram" src="{{ asset('images/Instagram.svg') }}"/>
+                <img class="twitter" src="{{ asset('images/Twitter.svg') }}"/>
+                <img class="github" src="{{ asset('images/Github.svg') }}"/>
+                <img class="location" src="{{ asset('images/location_on.svg') }}"/>
                 <div class="text-wrapper-2">Contact</div>
                 <div class="text-wrapper-3">About</div>
                 <div class="text-wrapper-4">Help</div>
@@ -234,4 +200,4 @@
             </div>
         </div>
     </div>
-
+@endsection
