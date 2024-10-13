@@ -1,0 +1,428 @@
+.group-child {
+    position: absolute;
+    top: 45px;
+    left: 37px;
+    border-radius: 60px;
+    width: 1383px;
+    height: 693px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 60px;
+    width: 1383.3px;
+    height: 693.5px;
+}
+.image-4-icon {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 398px;
+    height: 460px;
+    object-fit: cover;
+}
+.image-4-wrapper {
+    position: absolute;
+    top: 80.59px;
+    left: 108.02px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 453.1px;
+    height: 522.8px;
+}
+.group-inner {
+    position: absolute;
+    top: 50px;
+    left: 658px;
+    border-radius: 20px;
+    background-color: #85bac1;
+    width: 654px;
+    height: 605px;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 449px;
+    left: 672px;
+    border-radius: 20px;
+    width: 265px;
+    height: 31px;
+}
+.miss-peregrines-home {
+    position: absolute;
+    top: 66.8px;
+    left: 676.44px;
+    font-size: 49.26px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    width: 616.7px;
+    height: 103.9px;
+}
+.ransom-riggs {
+    text-decoration: underline;
+}
+.by-ransom-riggs-container {
+    position: absolute;
+    top: 411px;
+    left: 680px;
+    line-height: 100%;
+    display: inline-block;
+    width: 267.4px;
+    height: 21.2px;
+}
+.currently-being-borrowed {
+    position: absolute;
+    top: 454px;
+    left: 680px;
+    line-height: 100%;
+    display: inline-block;
+    width: 267.4px;
+    height: 21.2px;
+}
+.fantasy-fiction-horror-container {
+    position: absolute;
+    top: 183.44px;
+    left: 677.49px;
+    font-size: 24px;
+    line-height: 100%;
+    display: inline-block;
+    width: 298.9px;
+    height: 32.9px;
+}
+.a-mysterious-island {
+    margin: 0;
+}
+.a-mysterious-island-container {
+    position: absolute;
+    top: 230px;
+    left: 680px;
+    font-size: 19.17px;
+    line-height: 100%;
+    display: inline-block;
+    width: 576px;
+    height: 155px;
+}
+.group-icon {
+    position: absolute;
+    top: 0px;
+    left: 54.54px;
+    width: 29.4px;
+    height: 29.7px;
+}
+.div {
+    position: absolute;
+    top: 4.24px;
+    left: 0px;
+    line-height: 100%;
+    display: inline-block;
+    width: 54.5px;
+    height: 22.3px;
+}
+.group-parent {
+    position: absolute;
+    top: 183.44px;
+    left: 976.38px;
+    width: 83.9px;
+    height: 29.7px;
+    font-size: 20.91px;
+}
+.vector-group {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1383.3px;
+    height: 693.5px;
+}
+.button1 {
+    position: relative;
+    line-height: 100%;
+}
+.button {
+    position: absolute;
+    top: 503px;
+    left: 677px;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    box-sizing: border-box;
+    width: 112px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+.vector-parent {
+    position: absolute;
+    top: 288px;
+    left: 250px;
+    width: 1420px;
+    height: 738px;
+    font-size: 20px;
+}
+.value {
+    flex: 1;
+    position: relative;
+    line-height: 100%;
+}
+.x-icon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.search {
+    position: absolute;
+    top: 197.5px;
+    left: 786.5px;
+    border-radius: 9999px;
+    background-color: #55a6b1;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    width: 347px;
+    height: 46px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    gap: 8px;
+    opacity: 0.4;
+    font-size: 16px;
+}
+.whaddya-wanna-borrow {
+    position: absolute;
+    top: 149px;
+    left: 868px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #1e1e1e;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 195px;
+    height: 23px;
+    cursor: pointer;
+}
+.book-open-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.rectangle-div {
+    position: absolute;
+    top: 5px;
+    left: 355px;
+    border-radius: 20px;
+    background-color: #6cc8d4;
+    width: 112px;
+    height: 45px;
+    cursor: pointer;
+}
+.home {
+    position: absolute;
+    top: 14px;
+    left: 78px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 68px;
+    height: 23px;
+    cursor: pointer;
+}
+.genres {
+    position: absolute;
+    top: 14px;
+    left: 217px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 83px;
+    height: 23px;
+    cursor: pointer;
+}
+.borrow {
+    position: absolute;
+    top: 14px;
+    left: 370px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 82px;
+    height: 23px;
+}
+.wishlist {
+    position: absolute;
+    top: 14px;
+    left: 521px;
+    line-height: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 214px;
+    height: 23px;
+}
+.user-icon {
+    position: absolute;
+    top: 10px;
+    left: 1828px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+.user {
+    position: absolute;
+    top: 29px;
+    left: 1750px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 86px;
+    height: 23px;
+}
+.book-open-parent {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 1876px;
+    height: 58px;
+    color: #1e1e1e;
+}
+.borrow-2 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1080px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 23px;
+    color: #0a1e1d;
+    font-family: Inter;
+}
+
+
+.pick-up-or-delivery-overlay-child {
+    position: absolute;
+    top: 30px;
+    left: 27px;
+    border-radius: 60px;
+    width: 996px;
+    height: 451px;
+}
+.group-child1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 60px;
+    width: 996.6px;
+    height: 452px;
+}
+.delivery-or-pick-up {
+    position: absolute;
+    top: 32px;
+    left: 269px;
+    line-height: 100%;
+    display: inline-block;
+    width: 447px;
+    height: 41px;
+}
+.vector-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 996.6px;
+    height: 452px;
+}
+.group-child2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    background-color: #85bac1;
+    width: 360.2px;
+    height: 325.9px;
+}
+.delivery {
+    position: absolute;
+    top: 262.45px;
+    left: 88.59px;
+    line-height: 100%;
+    display: inline-block;
+    width: 179px;
+    height: 39px;
+}
+.home-icon {
+    position: absolute;
+    top: 42.45px;
+    left: 63.59px;
+    width: 233px;
+    height: 211px;
+    overflow: hidden;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 93px;
+    left: 89px;
+    width: 360.2px;
+    height: 325.9px;
+    font-size: 43.66px;
+}
+.pick-up {
+    position: absolute;
+    top: 261.45px;
+    left: 95.71px;
+    line-height: 100%;
+    display: inline-block;
+    width: 188px;
+    height: 28px;
+}
+.book-icon {
+    position: absolute;
+    top: 42.45px;
+    left: 70.71px;
+    width: 234px;
+    height: 211px;
+    overflow: hidden;
+}
+.rectangle-group {
+    position: absolute;
+    top: 92.55px;
+    left: 553.29px;
+    width: 360.2px;
+    height: 325.9px;
+    font-size: 47.16px;
+}
+.pick-up-or-delivery-overlay {
+    width: 1023px;
+    position: relative;
+    height: 481px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 46.59px;
+    color: #0a1e1d;
+    font-family: Inter;
+}
+

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -13,7 +12,6 @@ body {
     height: 100vh;
     flex-direction: column;
 }
-
 .container {
     text-align: center;
     background-color: white;
@@ -21,24 +19,28 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+<<<<<<< HEAD
 
 
+=======
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+>>>>>>> 7b344bf708314c4427d465c02def821495a70051
 h1 {
     font-size: 24px;
     color: #333;
     margin: 20px 0;
 }
-
 p {
     font-size: 16px;
     color: #666;
     margin-bottom: 30px;
 }
-
 .actions {
     margin-bottom: 20px;
 }
-
 .btn {
     background-color: #007BFF;
     color: white;
@@ -48,11 +50,9 @@ p {
     cursor: pointer;
     font-size: 16px;
 }
-
 .btn:hover {
     background-color: #0056b3;
 }
-
 .link {
     display: block;
     margin-top: 20px;
@@ -60,24 +60,20 @@ p {
     text-decoration: none;
     font-size: 14px;
 }
-
 .link:hover {
     text-decoration: underline;
 }
-
 footer {
     margin-top: 40px;
     text-align: center;
     font-size: 14px;
     color: #888;
 }
-
 footer a {
     color: #007BFF;
     text-decoration: none;
     margin: 0 10px;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
