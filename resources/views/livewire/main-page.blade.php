@@ -117,12 +117,66 @@
                 <div class="rectangle-3"></div>
                 <div class="rectangle-8"></div>
                 <a class="text-popular">Popular</a>
-                <div class="border">
-                    <div class="img-wrapper">
-                        <img class="contohimage" src="{{ asset('img/image-1.png') }}"/>
+                <div class="List-Popular">
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Gedagedi</a>
+                        <a class="rate">4.5/5</a>
                     </div>
-                    <a class="judul">Kentang Gedagedi</a>
-                    <a class="rate">4.5/5</a>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Bakar</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Rebus</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Goreng</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Manis</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Jagung</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Gatau</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                    <div class="border">
+                        <div class="img-wrapper">
+                            <img class="contohimage" src="img/image-1.png" alt="Kentang Gedagedi"/>
+                        </div>
+                        <a class="judul">Kentang Ya gitulah</a>
+                        <a class="rate">4.5/5</a>
+                    </div>
+                </div>
+                <div class="arrow-right-wrapper">
+                    <img class="arrow-right" src="{{ asset('img/arrow-right-2.svg') }}"/>
                 </div>
             </div>
             {{-- <?php
