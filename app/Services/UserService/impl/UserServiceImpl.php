@@ -8,6 +8,7 @@ use App\Services\UserService\UserService;
 use App\Repositories\UserRepository\UserRepository;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
+use App\Exceptions\User\UserNotFoundException;
 
 class UserServiceImpl implements UserService
 {
@@ -37,7 +38,13 @@ class UserServiceImpl implements UserService
 
     function getUser(int $id): ?User
     {
-        // TODO: Implement getUser() method.
+        $user = $this->userRepository->findById($id);
+
+        if (!$user) {
+            throw new UserNotFoundException();
+        }
+
+        return $user;
     }
 
     function updateUser(int $id, array $data): void

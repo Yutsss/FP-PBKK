@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Livewire\Main;
+use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use Illuminate\Http\Request;
 
@@ -12,18 +13,19 @@ Route::get('/', function () {
     return view('livewire.main-page');
 })->name('main');
 
-//Route::get('/home', function () {
-//    return view('livewire.homer');
-//})->name('home');
+Route::get('/home', function () {
+    return view('livewire.main-page');
+})->name('home')->middleware(['auth', 'verified']);
+
 Route::get('/register', Register::class)->name('register');
 
 Route::get('/genre', function () {
    return view('livewire.genre-page');
-})->name('genres');
+})->name('genres')->middleware('auth', `verified`);
 
 Route::get('/borrow', function () {
     return view('livewire.borrow-page');
- })->name('borrow');
+ })->name('borrow')->middleware('auth', `verified`);
 
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
@@ -40,7 +42,5 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
-
-Route::get('/login', function () {
-    return view('livewire.auth.login');
-})->name('login');
+Route::get('/login', Login::class)->name('login')
+    ->middleware('guest');

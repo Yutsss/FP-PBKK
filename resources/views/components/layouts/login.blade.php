@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{ asset('css/styleguide.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styl.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .custom-bg {
+            background-color: #95d0d8;
+        }
+        .custom-btn {
+            background-color: #333;
+            color: white;
+        }
+        .custom-btn:hover {
+            background-color: #555;
+        }
+        .custom-link {
+            color: #000;
+            text-decoration: underline;
+        }
+        .custom-link:hover {
+            color: #007bff;
+        }
+    </style>
+    @livewireStyles
+    <title>Online Library</title>
+</head>
+
+<body>
+<div class="navbar">
+    <img class="book-open" src="{{ asset('img/book-open.svg') }}" />
+
+    <a href="/homer">Home</a>
+    <a href="#genre">Genre</a>
+    <a href="#borrow">Borrow</a>
+    <a href="#wishlist">Wishlist</a>
+
+    <div class="search">
+        <div class="text-wrapper">Value</div>
+        <img class="x" src="{{ asset('img/x.svg') }}" />
+    </div>
+    <div class="button-grup">
+        <button class="button" onclick="window.location.href='/login'">Login</button>
+        <button class="button-wrapper" onclick="window.location.href='/register'">Register</button>
+    </div>
+</div>
+<div class="container">
+    @yield('content')
+</div>
+@livewireScripts
+</body>
