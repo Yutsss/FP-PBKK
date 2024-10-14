@@ -17,7 +17,10 @@
                 </div>
                 @if(auth()->check())
                 <div class="button-grup">
-                    <button class="button" onclick="window.location.href='/logout'">Logout</button>
+                    <form method="POST" action="/logout">
+                        @csrf
+                        <button type="submit" class="button">Logout</button>
+                    </form>
                     <button class="button-wrapper" onclick="window.location.href='/profile'">Profile</button>
                 @else
                 <div class="button-grup">

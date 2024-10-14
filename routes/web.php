@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LogoutController;
 use App\Livewire\Main;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
@@ -44,3 +45,7 @@ Route::post('/email/verification-notification', function (Request $request) {
 
 Route::get('/login', Login::class)->name('login')
     ->middleware('guest');
+
+Route::post('/logout', [LogoutController::class, 'logout'])
+    ->name('logout')
+    ->middleware('auth');
